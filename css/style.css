@@ -1,0 +1,173 @@
+/* Color Scheme 
+   Main Background: #344C3D (dark green)
+   Solutions Background: #8EA58C (light sage green)
+   Nav Background: Inherited from main dark green
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    color: white;
+    background-color: #344C3D;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem; /* Mobile font size */
+}
+
+/* Header and Masthead */
+
+.masthead img {
+    height: 29rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.masthead {
+    width: 100%;
+    position: relative;
+}
+
+.tagline h1 {
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.tagline {
+    padding: 10px;
+    bottom: 20px;
+    text-align: center;
+    left: 20px;
+    background-color: rgba(68, 161, 116, 0.499);
+    color: white;
+}
+
+
+/* Navigation */
+nav {
+    background-color: #344C3D;
+    width: 100%;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    list-style: none;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+    background-color: #344C3D;
+}
+
+/* Solution Section */
+.solution-buttons {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.solution-buttons button {
+    color: white;
+    background-color: #344C3D;
+    margin: 10px 0;
+    width: 80%;
+    border: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#solution-content {
+    color: #344C3D;
+    background-color: #8EA58C;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+
+.solution-buttons button.active {
+    color: #344C3D;
+    background-color: #8EA58C;
+}
+#solution-content h2 {
+    margin-bottom: 15px;
+    color: #344C3D;
+}
+
+#solution-content p {
+    color: #344C3D;
+}
+
+#solution-content img {
+    margin: 20px 0;
+    height: 20rem;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: #344C3D;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+/* Tablet/Desktop View */
+@media screen and (min-width: 30rem) {
+    body {
+        font-size: 1rem; /* Tablet/Desktop font size */
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .solution-buttons button {
+        margin: 0 15px;
+        width: auto;
+    }
+
+    .solution-buttons {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #solution-content {
+        margin: 0 auto;
+        max-width: 60rem;
+    }
+}
